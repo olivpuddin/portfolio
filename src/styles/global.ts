@@ -1,3 +1,4 @@
+import { linearGradient } from "polished";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -30,7 +31,16 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--primary); // puts logic here
+        height: 100vh;
+
+        background: ${linearGradient({
+          colorStops: ["#00FFFF 0%", "rgba(0, 0, 255, 0) 50%", "#0000FF 95%"],
+          toDirection: "0deg",
+          fallback: "#FFF",
+        })};
+        background-repeat: no-repeat;
+        background-size: cover; 
+
         -webkit-font-smoothing: antialiased; //for browsers using webkit: brought details to fonts
     }
 
