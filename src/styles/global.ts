@@ -33,13 +33,13 @@ export const GlobalStyle = createGlobalStyle`
     body {
         height: 100vh;
 
-        background: ${linearGradient({
+        /* background: ${linearGradient({
           colorStops: ["#e4b7e5 20%", "#1c1d21 95%"],
           toDirection: "0deg",
           fallback: "#FFF",
         })};
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;  */
 
         -webkit-font-smoothing: antialiased; //for browsers using webkit: brought details to fonts
     }

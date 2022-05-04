@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 5rem;
   border-bottom: 1px solid var(--primary-light);
+  background-color: ${({ theme }) => theme.body};
 `;
 
 export const Content = styled.div`
@@ -18,30 +19,33 @@ export const Content = styled.div`
 
 export const Menu = styled.nav`
   height: 5rem;
+`;
 
-  a {
-    display: inline-block;
-    position: relative;
-    padding: 0 0.5rem;
-    height: 5rem;
-    line-height: 5rem;
-    text-decoration: none;
+export const Link = styled.a`
+  cursor: pointer;
+
+  color: ${({ theme }) => theme.text};
+
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-decoration: none;
+
+  transition: color 0.8s;
+
+  & + a {
+    margin-left: 1.5rem;
+  }
+
+  &:hover {
     color: var(--primary-light);
+    filter: brightness(0.9);
+  }
 
-    transition: color 0.8s;
-
-    & + a {
-      margin-left: 1.5rem;
-    }
-
-    &:hover {
-      color: var(--primary-light);
-      filter: brightness(0.9);
-    }
-
-    &.activer {
-      font-weight: bold;
-    }
+  &.activer {
+    font-weight: bold;
   }
 `;
 
