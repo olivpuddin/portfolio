@@ -13,6 +13,7 @@ export const Content = styled.div`
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Menu = styled.nav`
@@ -41,25 +42,21 @@ export const Menu = styled.nav`
     &.activer {
       font-weight: bold;
     }
-
-    &.active::after {
-      content: ""; // In this property of CSS, it is recommended that you insert a 'content', even if you don't use it!
-      height: 3px;
-      border-radius: 3px 3px 0 0; // top left, top right, bottom right and bottom left.
-      width: 100%;
-      position: absolute;
-      bottom: 1px;
-      left: 0;
-      background: var(
-        --dark
-      ); // teste, aqui foi feita a border embaixo do name.
-    }
   }
 `;
 
 export const Icons = styled.div`
   color: var(--primary-light);
-  margin-left: auto;
 
-  
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  /* transition: color 0.8s;
+
+  &:hover {
+    filter: brightness(0.9);
+  } */
 `;

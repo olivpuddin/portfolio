@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
 
         background: ${linearGradient({
-          colorStops: ["#00FFFF 0%", "rgba(0, 0, 255, 0) 50%", "#0000FF 95%"],
+          colorStops: ["#e4b7e5 20%", "#1c1d21 95%"],
           toDirection: "0deg",
           fallback: "#FFF",
         })};
