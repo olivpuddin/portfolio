@@ -21,10 +21,10 @@ export const Header = () => {
           <ActiveLink href="/" activeClassName={""}>
             <a>Home</a>
           </ActiveLink>
-          <ActiveLink href="/" activeClassName={""}>
+          <ActiveLink href="/projects" activeClassName={""}>
             <a>Projects</a>
           </ActiveLink>
-          <ActiveLink href="/" activeClassName={""}>
+          <ActiveLink href="/contact" activeClassName={""}>
             <a>Contact</a>
           </ActiveLink>
         </Menu>
