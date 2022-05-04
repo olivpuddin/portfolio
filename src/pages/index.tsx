@@ -1,6 +1,7 @@
 // Next
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Teste } from "../components/BackgroundContent";
 
 // Components
 import { Header } from "../components/Header";
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
 
       <Header />
       
-      <h1>Home here</h1>
+      <Teste />
     </>
   );
 };
