@@ -59,9 +59,10 @@ export const Icons = styled.div`
 
   cursor: pointer;
 
-  /* transition: color 0.8s;
+  transition: filter 0.8s;
 
-  &:hover {
+  > :hover {
     filter: brightness(0.9);
-  } */
+    border: 1px solid transparent;
+  }
 `;
