@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 5rem;
   border-bottom: 1px solid var(--primary-light);
-  background-color: ${({ theme }) => theme.body};
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const Content = styled.div`
@@ -24,7 +24,7 @@ export const Menu = styled.nav`
 export const Link = styled.a`
   cursor: pointer;
 
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.body};
 
   display: inline-block;
   position: relative;
@@ -33,24 +33,25 @@ export const Link = styled.a`
   line-height: 5rem;
   text-decoration: none;
 
-  transition: color 0.8s;
+  font-weight: bold;
+
+  transition: filter 0.2s;
 
   & + a {
     margin-left: 1.5rem;
   }
 
   &:hover {
-    color: var(--primary-light);
-    filter: brightness(0.9);
+    filter: brightness(0.7);
   }
 
-  &.activer {
+  /* &.activer {
     font-weight: bold;
-  }
+  } */
 `;
 
 export const Icons = styled.div`
-  color: var(--primary-light);
+  color: ${({ theme }) => theme.body};
 
   width: 20%;
   display: flex;

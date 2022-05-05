@@ -12,9 +12,8 @@ import { DarkMode } from "../DarkMode";
 
 // assets
 import GithubSvg from "../../assets/github.svg";
+import GlobeSvg from "../../assets/globe.svg";
 import LinkedinSvg from "../../assets/linkedin.svg";
-import MoonSvg from "../../assets/moon.svg";
-// import GlobeSvg from "../../assets/globe.svg";
 
 // Styles
 import { Container, Content, Menu, Icons, Link } from "./styles";
@@ -39,9 +38,9 @@ export const Header = () => {
 
         <Icons>
           <GithubSvg />
-          <DarkMode onClick={() => handleTheme()} />
+          <GlobeSvg />
           <LinkedinSvg />
-          <MoonSvg />
+          <DarkMode onClick={() => handleTheme()} />
         </Icons>
       </Content>
     </Container>

@@ -1,22 +1,22 @@
 // Next
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Teste } from "../components/BackgroundContent";
+
+import { Container } from "./home";
 
 // Components
 import { Header } from "../components/Header";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Container>
       <Head>
         <title>Portfólio | Bruna Oliveira</title>
       </Head>
 
       <Header />
-      
-      <Teste />
-    </>
+      <h1>porra</h1>
+    </Container>
   );
 };
 

@@ -1,5 +1,6 @@
-import { linearGradient } from "polished";
 import { createGlobalStyle } from "styled-components";
+
+import { linearGradient } from "polished";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -32,20 +33,22 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         height: 100vh;
-
+        
+        -webkit-font-smoothing: antialiased; //for browsers using webkit: brought details to fonts
+        
+        
+        // if u need a lib to make a linear gradient, here's the deal ;)
         /* background: ${linearGradient({
           colorStops: ["#e4b7e5 20%", "#1c1d21 95%"],
           toDirection: "0deg",
           fallback: "#FFF",
         })};
         background-repeat: no-repeat;
-        background-size: cover;  */
-
-        -webkit-font-smoothing: antialiased; //for browsers using webkit: brought details to fonts
+        background-size: cover;  */  
     }
 
     body, input, textarea, button {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Fira Code', monospace;
         font-weight: 400;
     }
 
