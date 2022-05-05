@@ -1,15 +1,13 @@
 export const theme = {
   lightTheme: {
-    body: "#EBB436",
-    text: "#333333",
-    toggleBorder: "#EBB436",
-    background: "#EBB436",
+    background: "#CEF9F2",
+    header: "#9452A5",
+    body: "#9452A5",
   },
 
   darkTheme: {
-    body: "#363537",
-    text: "#FAFAFA",
-    toggleBorder: "#6B8096",
-    background: "#999",
+    background: "rgba(28, 29, 33, 1)",
+    header: "#E4B7E5",
+    body: "#E4B7E5",
   },
 };

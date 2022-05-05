@@ -1,6 +1,6 @@
 import React from "react";
 
-import GlobeSvg from "../../assets/globe.svg";
+import MoonSvg from "../../assets/moon.svg";
 
 interface Props {
   onClick: () => void;
@@ -9,7 +9,7 @@ interface Props {
 export const DarkMode = ({ onClick }: Props) => {
   return (
     <>
-      <GlobeSvg onClick={onClick} />
+      <MoonSvg onClick={onClick} />
     </>
   );
 };
