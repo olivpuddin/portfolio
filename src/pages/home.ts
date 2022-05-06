@@ -1,25 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  background-color: ${({ theme }) => theme.background};
-`;
-
-export const Content = styled.div`
-  max-width: 1120px;
+export const Wrapper = styled.div`
   height: calc(100vh - 5rem);
-
-  margin: 0 auto;
-  padding: 0 2rem;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   color: ${({ theme }) => theme.body};
-`;
-
-export const Section = styled.section`
-  max-width: 600px;
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const Title = styled.h1`
@@ -34,7 +23,6 @@ export const Subtitle = styled.h5`
 
 export const About = styled.p`
   font-size: 1.2rem;
-  margin-top: 5rem;
 `;
 
 export const Me = styled.img``;

@@ -11,6 +11,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          />
+
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         </Head>
         <body>

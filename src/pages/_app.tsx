@@ -7,6 +7,7 @@ import { DarkModeProvider } from "../hooks/useTheme";
 // Styles
 import { GlobalStyle } from "../styles/global";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <DarkModeProvider>
