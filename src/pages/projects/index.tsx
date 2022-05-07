@@ -9,8 +9,20 @@ import { Header } from "../../components/Header";
 import { CarouselMobile } from "../../components/Carousel/Mobile";
 import { CarouselWeb } from "../../components/Carousel/Web";
 
+// Icons
+import { FiSmartphone, FiMonitor } from "react-icons/fi";
+
 // Styles
-import { Container, Section, Content } from "./styles";
+import {
+  Container,
+  Section,
+  Content,
+  Mobile,
+  LabelMobile,
+  Web,
+  LabelWeb,
+  Title,
+} from "./styles";
 
 const Projects = () => {
   return (
@@ -24,15 +36,23 @@ const Projects = () => {
       <Container>
         <Content>
           <Section>
-            <div>
-              <p>oi</p>
-              <CarouselMobile />
-            </div>
+            <Mobile>
+              <LabelMobile>
+                <FiSmartphone />
+                <Title>Mobile</Title>
+              </LabelMobile>
 
-            <div>
-              <p>oi dnv</p>
+              <CarouselMobile />
+            </Mobile>
+
+            <Web>
+              <LabelWeb>
+                <FiMonitor />
+                <Title>Web</Title>
+              </LabelWeb>
+
               <CarouselWeb />
-            </div>
+            </Web>
           </Section>
         </Content>
       </Container>

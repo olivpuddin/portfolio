@@ -18,3 +18,33 @@ export const Content = styled.div`
 `;
 
 export const Section = styled.section``;
+
+export const Mobile = styled.div``;
+
+export const Web = styled.div``;
+
+export const LabelMobile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 80px;
+
+  margin-left: 1.2rem;
+  padding-top: 1.25rem;
+`;
+
+export const LabelWeb = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 60px;
+
+  margin-left: 1.2rem;
+  padding: 0.3rem 0;
+`;
+
+export const Title = styled.span`
+  font-weight: bold;
+`;

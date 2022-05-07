@@ -23,6 +23,7 @@ export const Subtitle = styled.h5`
 
 export const About = styled.p`
   font-size: 1.2rem;
+  margin-top: 4rem;
 `;
 
 export const Me = styled.img``;

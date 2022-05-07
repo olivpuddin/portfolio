@@ -33,7 +33,7 @@ export const CarouselMobile = () => {
         style={{
           maxHeight: "30vh",
           backgroundColor: "black",
-          borderRadius: "2rem",
+          borderRadius: "1rem",
         }}
         defaultControlsConfig={{
           pagingDotsStyle: {
@@ -48,27 +48,27 @@ export const CarouselMobile = () => {
           prevButtonStyle: {
             color: "transparent",
             position: "absolute",
-            padding: "10px",
+            padding: "8px",
             boxShadow: "1px -1px 0 1px #E4B7E5 inset",
             border: "solid transparent",
             borderWidth: "0 0 2px 2px",
             transform: "rotate(45deg)",
             backgroundColor: "transparent",
             marginLeft: "-2.5rem",
-            marginTop: "-20px",
+            marginTop: "-1rem",
           },
           nextButtonText: "00",
           nextButtonStyle: {
             color: "transparent",
             position: "absolute",
-            padding: "10px",
+            padding: "8px",
             boxShadow: "1px -1px 0 1px #E4B7E5 inset",
             border: "solid transparent",
             borderWidth: "0 0 2px 2px",
             transform: "rotate(225deg)",
             backgroundColor: "transparent",
             marginRight: "-2.5rem",
-            marginTop: "-20px",
+            marginTop: "-1rem",
           },
         }}
         wrapAround={true}
