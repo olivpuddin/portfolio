@@ -1615,6 +1615,11 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+nuka-carousel@^5.0.15:
+  version "5.0.15"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-5.0.15.tgz#4e338ed1c987b12fc425ccf0f968327fefb8d54d"
+  integrity sha512-TXUpxQ1JzPxKeaZvLmjAtlFwBCw31YIadvtdHlG+l0uycuAWNWsSDd5LvwiNHRla3BgrGx3HvKFmOuejpc6/xQ==
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
