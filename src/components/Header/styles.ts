@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 5rem;
-  border-bottom: 1px solid ${({ theme }) => theme.header};
+  /* border-bottom: 1px solid ${({ theme }) => theme.header}; */
 
   color: ${({ theme }) => theme.header};
   background-color: ${({ theme }) => theme.background};

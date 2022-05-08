@@ -38,7 +38,7 @@ export const Header = () => {
 
         <Icons>
           <GithubSvg />
-          <GlobeSvg />
+          {/* <GlobeSvg /> */}
           <LinkedinSvg />
           <DarkMode onClick={() => handleTheme()} />
         </Icons>
