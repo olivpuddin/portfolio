@@ -20,6 +20,6 @@ export const theme = {
     button_text: "rgba(28, 29, 33, 1)",
     text_light: "#CEF9F2",
 
-    hover: "gray",
+    hover: "#272727",
   },
 };
