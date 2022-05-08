@@ -16,7 +16,16 @@ import GlobeSvg from "../../assets/globe.svg";
 import LinkedinSvg from "../../assets/linkedin.svg";
 
 // Styles
-import { Container, Content, Menu, Icons, Link } from "./styles";
+import {
+  Container,
+  Content,
+  Menu,
+  Link,
+  Icons,
+  Github,
+  Linkedin,
+  Darkside,
+} from "./styles";
 
 export const Header = () => {
   const { handleTheme } = useTheme();
@@ -37,10 +46,18 @@ export const Header = () => {
         </Menu>
 
         <Icons>
-          <GithubSvg />
+          <Github>
+            <GithubSvg />
+          </Github>
           {/* <GlobeSvg /> */}
-          <LinkedinSvg />
-          <DarkMode onClick={() => handleTheme()} />
+
+          <Linkedin>
+            <LinkedinSvg />
+          </Linkedin>
+
+          <Darkside>
+            <DarkMode onClick={() => handleTheme()} />
+          </Darkside>
         </Icons>
       </Content>
     </Container>

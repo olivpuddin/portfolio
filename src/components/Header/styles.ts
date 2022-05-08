@@ -55,15 +55,48 @@ export const Link = styled.a`
 
 export const Icons = styled.div`
   width: 20%;
+  
   display: flex;
   justify-content: space-between;
 
   cursor: pointer;
+`;
+
+export const Github = styled.div`
+  border-radius: 1rem;
+
+  padding: 0.3rem;
 
   transition: filter 0.8s;
 
-  > :hover {
+  :hover {
+    background-color: ${({ theme }) => theme.hover};
     filter: brightness(0.9);
-    border: 1px solid transparent;
+  }
+`;
+
+export const Linkedin = styled.div`
+  border-radius: 1rem;
+
+  padding: 0.3rem;
+
+  transition: filter 0.8s;
+
+  :hover {
+    background-color: ${({ theme }) => theme.hover};
+    filter: brightness(0.9);
+  }
+`;
+
+export const Darkside = styled.div`
+  border-radius: 1rem;
+
+  padding: 0.3rem;
+
+  transition: filter 0.8s;
+
+  :hover {
+    background-color: ${({ theme }) => theme.hover};
+    filter: brightness(0.9);
   }
 `;
