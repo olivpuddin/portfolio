@@ -6,7 +6,7 @@ interface Props {
   onClick: () => void;
 }
 
-export const DarkMode = ({ onClick }: Props) => {
+export const DarkModeIcon = ({ onClick }: Props) => {
   return (
     <>
       <MoonSvg onClick={onClick} />

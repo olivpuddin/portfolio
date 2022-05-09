@@ -6,6 +6,7 @@ export const theme = {
 
     button: "#9452A5",
     button_text: "#CEF9F2",
+    title: '#272727',
     text_light: "rgba(28, 29, 33, 1)",
 
     hover: "white",
@@ -18,6 +19,7 @@ export const theme = {
 
     button: "#E4B7E5",
     button_text: "rgba(28, 29, 33, 1)",
+    title: '#272727',
     text_light: "#CEF9F2",
 
     hover: "#272727",

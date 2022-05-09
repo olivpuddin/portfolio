@@ -8,7 +8,7 @@ import { ActiveLink } from "../ActiveLink";
 import { useTheme } from "../../hooks/useTheme";
 
 // Components
-import { DarkMode } from "../DarkMode";
+import { DarkModeIcon } from "../DarkModeIcon";
 
 // assets
 import GithubSvg from "../../assets/github.svg";
@@ -56,7 +56,7 @@ export const Header = () => {
           </Linkedin>
 
           <Darkside>
-            <DarkMode onClick={() => handleTheme()} />
+            <DarkModeIcon onClick={() => handleTheme()} />
           </Darkside>
         </Icons>
       </Content>
