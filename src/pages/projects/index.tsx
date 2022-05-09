@@ -9,6 +9,13 @@ import { Header } from "../../components/Header";
 import { CarouselMobile } from "../../components/Carousel/Mobile";
 import { CarouselWeb } from "../../components/Carousel/Web";
 
+// Theme
+import { useTheme } from "../../hooks/useTheme";
+
+// assets
+import BackgroundDark from "../../assets/background-dark.svg";
+import BackgroundLight from "../../assets/background-light.svg";
+
 // Icons
 import { FiSmartphone, FiMonitor } from "react-icons/fi";
 
@@ -25,6 +32,8 @@ import {
 } from "./styles";
 
 const Projects = () => {
+  const { isDarkTheme } = useTheme();
+
   return (
     <>
       <Head>
@@ -35,6 +44,30 @@ const Projects = () => {
 
       <Container>
         <Content>
+          {isDarkTheme ? (
+            <BackgroundDark
+              style={{
+                position: "fixed",
+                left: "0",
+                right: "0",
+                margin: "0 auto",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          ) : (
+            <BackgroundLight
+              style={{
+                position: "fixed",
+                left: "0",
+                right: "0",
+                margin: "0 auto",
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          )}
+
           <Section>
             <Mobile>
               <LabelMobile>

@@ -8,10 +8,19 @@ import Head from "next/head";
 // Components
 import { Header } from "../components/Header";
 
+// Theme
+import { useTheme } from "../hooks/useTheme";
+
+// assets
+import BackgroundDark from "../assets/background-dark.svg";
+import BackgroundLight from "../assets/background-light.svg";
+
 // Styles
 import { Wrapper, Title, Subtitle, About, Me } from "./home";
 
 const Home: NextPage = () => {
+  const { isDarkTheme } = useTheme();
+
   return (
     <>
       <Head>
@@ -35,6 +44,30 @@ const Home: NextPage = () => {
               alignItems: "center",
             }}
           >
+            {isDarkTheme ? (
+              <BackgroundDark
+                style={{
+                  position: "fixed",
+                  left: "0",
+                  right: "0",
+                  margin: "0 auto",
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            ) : (
+              <BackgroundLight
+                style={{
+                  position: "fixed",
+                  left: "0",
+                  right: "0",
+                  margin: "0 auto",
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            )}
+
             <Col md={6} sm={12}>
               <Title>Bruna Oliveira</Title>
               <Subtitle>

@@ -54,16 +54,16 @@ export const Icons = styled.div`
 
   display: flex;
   justify-content: space-between;
-
-  cursor: pointer;
 `;
 
 export const Github = styled.div`
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 
-  padding: 0.3rem;
+  padding: 0.6rem;
 
   transition: filter 0.8s;
+
+  cursor: pointer;
 
   :hover {
     background-color: ${({ theme }) => theme.hover};
@@ -72,11 +72,13 @@ export const Github = styled.div`
 `;
 
 export const Linkedin = styled.div`
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 
-  padding: 0.3rem;
+  padding: 0.6rem;
 
   transition: filter 0.8s;
+
+  cursor: pointer;
 
   :hover {
     background-color: ${({ theme }) => theme.hover};
@@ -85,11 +87,13 @@ export const Linkedin = styled.div`
 `;
 
 export const Darkside = styled.div`
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 
-  padding: 0.3rem;
+  padding: 0.6rem;
 
   transition: filter 0.8s;
+
+  cursor: pointer;
 
   :hover {
     background-color: ${({ theme }) => theme.hover};
