@@ -7,6 +7,7 @@ import Head from "next/head";
 
 // Components
 import { Header } from "../components/Header";
+import { Background } from "../components/Background";
 
 // Theme
 import { useTheme } from "../hooks/useTheme";
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
   const { isDarkTheme } = useTheme();
 
   return (
-    <>
+    <Background>
       <Head>
         <title>Portfólio | Bruna Oliveira</title>
       </Head>
@@ -44,30 +45,6 @@ const Home: NextPage = () => {
               alignItems: "center",
             }}
           >
-            {isDarkTheme ? (
-              <BackgroundDark
-                style={{
-                  position: "fixed",
-                  left: "0",
-                  right: "0",
-                  margin: "0 auto",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            ) : (
-              <BackgroundLight
-                style={{
-                  position: "fixed",
-                  left: "0",
-                  right: "0",
-                  margin: "0 auto",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            )}
-
             <Col md={6} sm={12}>
               <Title>Bruna Oliveira</Title>
               <Subtitle>
@@ -89,7 +66,7 @@ const Home: NextPage = () => {
           </Row>
         </Container>
       </Wrapper>
-    </>
+    </Background>
   );
 };
 

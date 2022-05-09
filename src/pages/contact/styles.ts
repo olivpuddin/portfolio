@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   align-items: center;
 
   color: ${({ theme }) => theme.body};
-  background-color: ${({ theme }) => theme.background};
 
   span :last-child {
     color: ${({ theme }) => theme.text_light};
@@ -15,16 +14,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.span`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 `;
 
 export const Button = styled.button`
-  width: 300px;
-  height: 5rem;
+  width: 250px;
+  height: 3.5rem;
 
   border: 0;
-  border-radius: 2rem;
+  border-radius: 1rem;
 
   color: ${({ theme }) => theme.button_text};
   background-color: ${({ theme }) => theme.button};

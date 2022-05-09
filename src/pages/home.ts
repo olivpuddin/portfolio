@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   color: ${({ theme }) => theme.body};
-  background-color: ${({ theme }) => theme.background};
 `;
 
 export const Title = styled.h1`

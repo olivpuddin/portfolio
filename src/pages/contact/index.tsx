@@ -9,6 +9,7 @@ import Head from "next/head";
 
 // Components
 import { Header } from "../../components/Header";
+import { Background } from "../../components/Background";
 
 // Theme
 import { useTheme } from "../../hooks/useTheme";
@@ -27,7 +28,7 @@ const Contact = () => {
   const { isDarkTheme } = useTheme();
 
   return (
-    <>
+    <Background>
       <Head>
         <title>Contact</title>
       </Head>
@@ -47,30 +48,6 @@ const Contact = () => {
               alignItems: "center",
             }}
           >
-            {isDarkTheme ? (
-              <BackgroundDark
-                style={{
-                  position: "fixed",
-                  left: "0",
-                  right: "0",
-                  margin: "0 auto",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            ) : (
-              <BackgroundLight
-                style={{
-                  position: "fixed",
-                  left: "0",
-                  right: "0",
-                  margin: "0 auto",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            )}
-
             <Col md={6}>
               <Title>
                 Have any <span>project</span> in your mind?
@@ -98,7 +75,7 @@ const Contact = () => {
           </Row>
         </Container>
       </Wrapper>
-    </>
+    </Background>
   );
 };
 

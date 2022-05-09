@@ -7,13 +7,11 @@ import { ActiveLink } from "../ActiveLink";
 // hooks
 import { useTheme } from "../../hooks/useTheme";
 
-// Components
-import { DarkModeIcon } from "../DarkModeIcon";
-
 // assets
 import GithubSvg from "../../assets/github.svg";
 import GlobeSvg from "../../assets/globe.svg";
 import LinkedinSvg from "../../assets/linkedin.svg";
+import MoonSvg from "../../assets/moon.svg";
 
 // Styles
 import {
@@ -55,8 +53,8 @@ export const Header = () => {
             <LinkedinSvg />
           </Linkedin>
 
-          <Darkside>
-            <DarkModeIcon onClick={() => handleTheme()} />
+          <Darkside onClick={() => handleTheme()}>
+            <MoonSvg />
           </Darkside>
         </Icons>
       </Content>
