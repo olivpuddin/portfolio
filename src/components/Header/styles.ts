@@ -47,15 +47,11 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.header};
     filter: brightness(0.7);
   }
-
-  /* &.activer {
-    font-weight: bold;
-  } */
 `;
 
 export const Icons = styled.div`
   width: 20%;
-  
+
   display: flex;
   justify-content: space-between;
 
