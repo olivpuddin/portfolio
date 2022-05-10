@@ -24,7 +24,6 @@ import {
   Linkedin,
   Darkside,
 } from "./styles";
-import { DropdownMenuDemo } from "../Dropdown";
 
 export const Header = () => {
   const { handleTheme } = useTheme();
@@ -48,8 +47,6 @@ export const Header = () => {
           <Github>
             <GithubSvg />
           </Github>
-          <DropdownMenuDemo />
-          {/* <GlobeSvg /> */}
 
           <Linkedin>
             <LinkedinSvg />
