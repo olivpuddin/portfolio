@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: calc(100vh - 5rem);
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -25,4 +26,6 @@ export const About = styled.p`
   margin-top: 4rem;
 `;
 
-export const Me = styled.img``;
+export const Me = styled.img`
+  height: 250px;
+`;

@@ -9,19 +9,10 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Background } from "../components/Background";
 
-// Theme
-import { useTheme } from "../hooks/useTheme";
-
-// assets
-import BackgroundDark from "../assets/background-dark.svg";
-import BackgroundLight from "../assets/background-light.svg";
-
 // Styles
 import { Wrapper, Title, Subtitle, About, Me } from "./home";
 
 const Home: NextPage = () => {
-  const { isDarkTheme } = useTheme();
-
   return (
     <Background>
       <Head>
@@ -32,20 +23,12 @@ const Home: NextPage = () => {
 
       <Wrapper>
         <Container
-          fluid
           style={{
-            width: "60%",
+            width: "100%",
           }}
         >
-          <Row
-            md={12}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <Col md={6} sm={12}>
+          <Row md={12}>
+            <Col md={6} sm={6}>
               <Title>Bruna Oliveira</Title>
               <Subtitle>
                 <i>&lt;Front-end dev /&gt;</i>
@@ -55,7 +38,7 @@ const Home: NextPage = () => {
 
             <Col
               md={6}
-              sm={12}
+              sm={6}
               style={{
                 display: "flex",
                 justifyContent: "center",

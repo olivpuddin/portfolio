@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: calc(100vh - 5rem);
+  width: 100%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   color: ${({ theme }) => theme.body};
 
@@ -21,6 +23,8 @@ export const Title = styled.span`
 export const Button = styled.button`
   width: 250px;
   height: 3.5rem;
+
+  margin: 1rem 0;
 
   border: 0;
   border-radius: 1rem;
@@ -41,13 +45,14 @@ export const Button = styled.button`
 export const More = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  width: 210px;
-
-  margin: 1rem 1.2rem;
+  margin: 1rem 0;
 `;
 
-export const Email = styled.span``;
+export const Email = styled.span`
+  margin-left: 0.5rem;
+`;
 
-export const Me = styled.img``;
+export const Me = styled.img`
+  margin-top: 1rem;
+`;
