@@ -28,7 +28,7 @@ export const ModalBlank = ({ title, isOpen, onClosed, children }: Props) => {
       size="lg"
       centered
       isOpen={isOpen}
-      onClosed={onClosed}
+      toggle={onClosed}
       keyboard={true}
       fade={true}
     >
