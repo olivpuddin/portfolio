@@ -50,8 +50,6 @@ export const Link = styled.a`
 `;
 
 export const Icons = styled.div`
-  width: 20%;
-
   display: flex;
   justify-content: space-between;
 `;

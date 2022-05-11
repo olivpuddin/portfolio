@@ -19,39 +19,9 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 
-export const Menu = styled.nav`
-  height: 5rem;
-`;
-
-export const Link = styled.a`
-  cursor: pointer;
-
-  color: ${({ theme }) => theme.header};
-
-  display: inline-block;
-  position: relative;
-  padding: 0 0.5rem;
-  height: 5rem;
-  line-height: 5rem;
-  text-decoration: none;
-
-  font-weight: bold;
-
-  transition: filter 0.2s;
-
-  & + a {
-    margin-left: 1.5rem;
-  }
-
-  &:hover {
-    color: ${({ theme }) => theme.header};
-    filter: brightness(0.7);
-  }
-`;
+export const Menu = styled.nav``;
 
 export const Icons = styled.div`
-  width: 20%;
-
   display: flex;
   justify-content: space-between;
 `;

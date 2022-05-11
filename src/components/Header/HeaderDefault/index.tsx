@@ -2,16 +2,16 @@
 import React from "react";
 
 // Active Link
-import { ActiveLink } from "../ActiveLink";
+import { ActiveLink } from "../../ActiveLink";
 
 // hooks
-import { useTheme } from "../../hooks/useTheme";
+import { useTheme } from "../../../hooks/useTheme";
 
 // assets
-import GithubSvg from "../../assets/github.svg";
-import GlobeSvg from "../../assets/globe.svg";
-import LinkedinSvg from "../../assets/linkedin.svg";
-import MoonSvg from "../../assets/moon.svg";
+import GithubSvg from "../../../assets/github.svg";
+import GlobeSvg from "../../../assets/globe.svg";
+import LinkedinSvg from "../../../assets/linkedin.svg";
+import MoonSvg from "../../../assets/moon.svg";
 
 // Styles
 import {
@@ -25,7 +25,7 @@ import {
   Darkside,
 } from "./styles";
 
-export const Header = () => {
+export const HeaderDefault = () => {
   const { handleTheme } = useTheme();
 
   return (
@@ -47,6 +47,7 @@ export const Header = () => {
           <Github>
             <GithubSvg />
           </Github>
+          {/* <GlobeSvg /> */}
 
           <Linkedin>
             <LinkedinSvg />
