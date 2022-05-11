@@ -1,22 +1,13 @@
 // React
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
+import { useWidth } from "../../hooks/useWidth";
 
 // Header's components
 import { HeaderDefault } from "./HeaderDefault";
 import { HeaderDrop } from "./HeaderDrop/indext";
 
 export const Header = () => {
-  const [width, setWidth] = useState(0);
-
-  const handleResize = useCallback(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize, width]);
+  const { width } = useWidth();
 
   return <>{width <= 500 ? <HeaderDrop /> : <HeaderDefault />}</>;
 };

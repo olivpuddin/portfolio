@@ -7,11 +7,14 @@ import { DarkModeProvider } from "../hooks/useTheme";
 // Styles
 import { GlobalStyle } from "../styles/global";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { WidthProvider } from "../hooks/useWidth";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <DarkModeProvider>
-      <Component {...pageProps} />
+      <WidthProvider>
+        <Component {...pageProps} />
+      </WidthProvider>
       <GlobalStyle />
     </DarkModeProvider>
   );

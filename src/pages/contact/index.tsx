@@ -7,6 +7,9 @@ import { Row, Col, Container } from "reactstrap";
 // Next
 import Head from "next/head";
 
+// hooks
+import { useWidth } from "../../hooks/useWidth";
+
 // Components
 import { Header } from "../../components/Header";
 import { Background } from "../../components/Background";
@@ -18,6 +21,8 @@ import { FiMail } from "react-icons/fi";
 import { Wrapper, Title, Button, Email, Me, More } from "./styles";
 
 const Contact = () => {
+  const { width } = useWidth();
+
   return (
     <Background>
       <Head>
@@ -28,9 +33,13 @@ const Contact = () => {
 
       <Wrapper>
         <Container
-          style={{
-            width: "100%",
-          }}
+          style={
+            width <= 500
+              ? {
+                  textAlign: "center",
+                }
+              : {}
+          }
         >
           <Row md={12}>
             <Col md={6} sm={6}>

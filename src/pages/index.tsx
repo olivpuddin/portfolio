@@ -5,6 +5,9 @@ import { Col, Row, Container } from "reactstrap";
 import type { NextPage } from "next";
 import Head from "next/head";
 
+// hooks
+import { useWidth } from "../hooks/useWidth";
+
 // Components
 import { Header } from "../components/Header";
 import { Background } from "../components/Background";
@@ -13,6 +16,8 @@ import { Background } from "../components/Background";
 import { Wrapper, Title, Subtitle, About, Me } from "./home";
 
 const Home: NextPage = () => {
+  const { width } = useWidth();
+
   return (
     <Background>
       <Head>
@@ -23,9 +28,13 @@ const Home: NextPage = () => {
 
       <Wrapper>
         <Container
-          style={{
-            width: "100%",
-          }}
+          style={
+            width <= 500
+              ? {
+                  textAlign: "center",
+                }
+              : {}
+          }
         >
           <Row md={12}>
             <Col md={6} sm={6}>
