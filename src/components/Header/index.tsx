@@ -1,63 +1,22 @@
 // React
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
-// Active Link
-import { ActiveLink } from "../ActiveLink";
-
-// hooks
-import { useTheme } from "../../hooks/useTheme";
-
-// assets
-import GithubSvg from "../../assets/github.svg";
-import GlobeSvg from "../../assets/globe.svg";
-import LinkedinSvg from "../../assets/linkedin.svg";
-import MoonSvg from "../../assets/moon.svg";
-
-// Styles
-import {
-  Container,
-  Content,
-  Menu,
-  Link,
-  Icons,
-  Github,
-  Linkedin,
-  Darkside,
-} from "./styles";
+// Header's components
+import { HeaderDefault } from "./HeaderDefault";
+import { HeaderDrop } from "./HeaderDrop/indext";
 
 export const Header = () => {
-  const { handleTheme } = useTheme();
+  const [width, setWidth] = useState(0);
 
-  return (
-    <Container>
-      <Content>
-        <Menu>
-          <ActiveLink href="/" activeClassName={""}>
-            <Link>Home</Link>
-          </ActiveLink>
-          <ActiveLink href="/projects" activeClassName={""}>
-            <Link>Projects</Link>
-          </ActiveLink>
-          <ActiveLink href="/contact" activeClassName={""}>
-            <Link>Contact</Link>
-          </ActiveLink>
-        </Menu>
+  const handleResize = useCallback(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
-        <Icons>
-          <Github>
-            <GithubSvg />
-          </Github>
-          {/* <GlobeSvg /> */}
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [handleResize, width]);
 
-          <Linkedin>
-            <LinkedinSvg />
-          </Linkedin>
-
-          <Darkside onClick={() => handleTheme()}>
-            <MoonSvg />
-          </Darkside>
-        </Icons>
-      </Content>
-    </Container>
-  );
+  return <>{width <= 500 ? <HeaderDrop /> : <HeaderDefault />}</>;
 };
