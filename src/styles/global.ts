@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     -khtml-user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+
   }
 
   // Default font-size: 16px for Desktops
