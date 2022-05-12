@@ -1,11 +1,15 @@
 import React, { ReactNode } from "react";
 
-import { Backs } from './styles'
+import { Backs, Container } from "./styles";
 
 interface Props {
   children: ReactNode;
 }
 
 export const Background = ({ children }: Props) => {
-  return <Backs>{children}</Backs>;
+  return (
+    <Container>
+      <Backs>{children}</Backs>
+    </Container>
+  );
 };

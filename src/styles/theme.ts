@@ -3,7 +3,8 @@ import backgroundLight from "../assets/background-light.png";
 
 export const theme = {
   lightTheme: {
-    background: "#CEF9F2",
+    background:
+      "linear-gradient(0deg, rgba(179,171,206,1) 0%, rgba(206,249,242,1) 100%)",
     header: "#9452A5",
     body: "#9452A5",
 
@@ -18,7 +19,8 @@ export const theme = {
   },
 
   darkTheme: {
-    background: "rgba(28, 29, 33, 1)",
+    background:
+      "linear-gradient(0deg, rgba(81,70,85,1) 0%, rgba(28,29,33,1) 100%)",
     header: "#E4B7E5",
     body: "#E4B7E5",
 
