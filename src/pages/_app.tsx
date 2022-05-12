@@ -9,7 +9,7 @@ import { DarkModeProvider } from "../hooks/useTheme";
 import { WidthProvider } from "../hooks/useWidth";
 
 // Components
-import { LoadingScreen } from "../components/loadingScreen";
+import { LoadingScreen } from "../components/LoadingScreen";
 
 // Styles
 import { GlobalStyle } from "../styles/global";

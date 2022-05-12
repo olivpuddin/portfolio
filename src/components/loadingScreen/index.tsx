@@ -18,15 +18,15 @@ export const LoadingScreen = () => {
   return (
     <motion.div
       style={{
-        backgroundColor: "#1c1d21",
         height: "100vh",
+        width: "100%",
+        position: "absolute",
         justifyContent: "center",
         alignItems: "center",
-        paddingBottom: "200px",
-        position: "absolute",
-        width: "100%",
-        zIndex: 99,
+        paddingBottom: "150px",
         display: isFinish ? "flex" : "none",
+        zIndex: 99,
+        backgroundColor: "#1c1d21",
       }}
       animate={{ y: "-100vh", opacity: 1 }}
       transition={{ delay: 2.5, duration: 1 }}
