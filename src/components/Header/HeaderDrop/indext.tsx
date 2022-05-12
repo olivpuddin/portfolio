@@ -5,10 +5,10 @@ import React from "react";
 import { useTheme } from "../../../hooks/useTheme";
 
 // assets
-import GithubSvg from "../../../assets/github.svg";
-import GlobeSvg from "../../../assets/globe.svg";
-import LinkedinSvg from "../../../assets/linkedin.svg";
-import MoonSvg from "../../../assets/moon.svg";
+import GithubSvg from "../../../assets/icons/github.svg";
+import GlobeSvg from "../../../assets/icons/globe.svg";
+import LinkedinSvg from "../../../assets/icons/linkedin.svg";
+import MoonSvg from "../../../assets/icons/moon.svg";
 
 // Styles
 import {

@@ -9,8 +9,8 @@ export const Title = styled.span`
 
 export const Button = styled.button`
   position: absolute;
-  top: -3rem;
-  right: -1px;
+  top: 0.1rem;
+  right: 0.8rem;
 
   border: 0;
   background-color: transparent;

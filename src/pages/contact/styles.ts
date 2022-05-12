@@ -20,6 +20,12 @@ export const Title = styled.span`
   font-weight: bold;
 `;
 
+export const Subtitle = styled.span`
+  display: grid;
+  font-size: 3rem;
+  font-weight: bold;
+`;
+
 export const Button = styled.button`
   width: 250px;
   height: 3.5rem;

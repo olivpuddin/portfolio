@@ -18,7 +18,7 @@ import { Background } from "../../components/Background";
 import { FiMail } from "react-icons/fi";
 
 // Styles
-import { Wrapper, Title, Button, Email, Me, More } from "./styles";
+import { Wrapper, Title, Subtitle, Button, Email, Me, More } from "./styles";
 
 const Contact = () => {
   const { width } = useWidth();
@@ -45,6 +45,7 @@ const Contact = () => {
             <Col md={6} sm={6}>
               <Title>
                 Have any <span>project</span> in your mind?
+                <Subtitle>Let&apos;s discuss</Subtitle>
               </Title>
               <Col md={6}>
                 <Button>Start talking</Button>

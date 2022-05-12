@@ -29,8 +29,6 @@ import {
 } from "./styles";
 
 const Projects = () => {
-  const { isDarkTheme } = useTheme();
-
   return (
     <Background>
       <Head>

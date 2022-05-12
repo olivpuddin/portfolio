@@ -9,9 +9,13 @@ import Carousel from "nuka-carousel";
 
 // Components
 import { ModalBlank } from "../../../components/Modal";
+import { IconTag } from "../../IconTag";
 
 // assets
 import galinha from "../../../assets/galinha.png";
+
+// Icons
+import { FiGithub } from "react-icons/fi";
 
 // Styles
 import { Container, Gofinances, ToDo, Ignews, HotelBudget } from "./styles";
@@ -139,18 +143,22 @@ export const CarouselWeb = () => {
           wrapAround={true}
         >
           <Gofinances onClick={handleModalGofinances}>
+            <IconTag IconLib={FiGithub} />
             <Image src={galinha} alt="oi" />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
+            <IconTag IconLib={FiGithub} />
             <Image src={galinha} alt="oi" />
           </ToDo>
 
           <Ignews onClick={handleModalIgnews}>
+            <IconTag IconLib={FiGithub} />
             <Image src={galinha} alt="oi" />
           </Ignews>
 
           <HotelBudget onClick={handleModalHotel}>
+            <IconTag IconLib={FiGithub} />
             <Image src={galinha} alt="oi" />
           </HotelBudget>
         </Carousel>

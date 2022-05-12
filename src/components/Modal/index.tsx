@@ -25,12 +25,13 @@ export const ModalBlank = ({ title, isOpen, onClosed, children }: Props) => {
   return (
     <Modal
       title={title}
-      size="lg"
+      size="xl"
       centered
       isOpen={isOpen}
       toggle={onClosed}
       keyboard={true}
       fade={true}
+      scrollable
     >
       <ModalHeader
         style={{

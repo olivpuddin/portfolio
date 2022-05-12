@@ -9,9 +9,14 @@ import Carousel from "nuka-carousel";
 
 // Components
 import { ModalBlank } from "../../../components/Modal";
+import { IconTag } from "../../IconTag";
 
 // assets
+import teste from "../../../assets/projects/teste.png";
 import galinha from "../../../assets/galinha.png";
+
+// Icons
+import { FiGithub } from "react-icons/fi";
 
 // Styles
 import { Container, Gofinances, ToDo, RentX } from "./styles";
@@ -42,6 +47,7 @@ export const CarouselMobile = () => {
 
   return (
     <>
+      {/* inside */}
       <ModalBlank
         isOpen={isModalGofinancesOpen}
         onClosed={handleModalClose}
@@ -55,7 +61,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="To Do"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="galinha" src={galinha} />
       </ModalBlank>
 
       <ModalBlank
@@ -63,7 +69,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="RentX"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="galinha" src={galinha} />
       </ModalBlank>
 
       <Container>
@@ -124,16 +130,20 @@ export const CarouselMobile = () => {
           }}
           wrapAround={true}
         >
+          {/* outside */}
           <Gofinances onClick={handleModalGofinances}>
-            <Image src={galinha} alt="oi" />
+            <IconTag IconLib={FiGithub} />
+            <Image src={galinha} alt="oi" layout="responsive" />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
-            <Image src={galinha} alt="oi" />
+            <IconTag IconLib={FiGithub} />
+            <Image src={galinha} alt="oi" layout="responsive" />
           </ToDo>
 
           <RentX onClick={handleModalRentX}>
-            <Image src={galinha} alt="oi" />
+            <IconTag IconLib={FiGithub} />
+            <Image src={galinha} alt="oi" layout="responsive" />
           </RentX>
         </Carousel>
       </Container>
