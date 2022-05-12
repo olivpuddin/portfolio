@@ -9,11 +9,12 @@ export const Title = styled.span`
 
 export const Button = styled.button`
   position: absolute;
-  right: 1.5rem;
-  top: -1.5rem;
+  top: -3rem;
+  right: -1px;
 
   border: 0;
-  background: red;
+  background-color: transparent;
+  color: #e1e1e6;
 
   transition: filter 0.2s;
 
