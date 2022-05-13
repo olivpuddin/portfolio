@@ -13,10 +13,14 @@ import { IconTag } from "../../IconTag";
 
 // assets
 import galinha from "../../../assets/galinha.png";
+import gofinances from "../../../assets/projects/gofinances-web.png";
+import toDo from "../../../assets/projects/toDo-web.png";
+import ignews from "../../../assets/projects/ignews.png";
+import hotel from "../../../assets/projects/hotel.png";
 
 // Icons
 import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from 'react-icons/si'
+import { SiNextdotjs } from "react-icons/si";
 
 // Styles
 import { Container, Gofinances, ToDo, Ignews, HotelBudget } from "./styles";
@@ -58,7 +62,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="gofinances"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="gofinances" src={gofinances} />
       </ModalBlank>
 
       <ModalBlank
@@ -66,7 +70,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="To Do"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="To Do" src={toDo} />
       </ModalBlank>
 
       <ModalBlank
@@ -74,7 +78,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="Ig.news"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="ignews" src={ignews} />
       </ModalBlank>
 
       <ModalBlank
@@ -82,7 +86,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="Hotel Budget"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="hotel" src={hotel} />
       </ModalBlank>
 
       <Container>

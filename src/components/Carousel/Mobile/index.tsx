@@ -12,8 +12,10 @@ import { ModalBlank } from "../../../components/Modal";
 import { IconTag } from "../../IconTag";
 
 // assets
-import teste from "../../../assets/projects/teste.png";
 import galinha from "../../../assets/galinha.png";
+import gofinances from "../../../assets/projects/gofinances-mob.png";
+import toDo from "../../../assets/projects/toDo-mob.png";
+import rentX from "../../../assets/projects/rentx.png";
 
 // Icons
 import { FaReact } from "react-icons/fa";
@@ -53,7 +55,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="gofinances"
       >
-        <Image alt="teste" src={galinha} />
+        <Image alt="gofinances" src={gofinances} />
       </ModalBlank>
 
       <ModalBlank
@@ -61,7 +63,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="To Do"
       >
-        <Image alt="galinha" src={galinha} />
+        <Image alt="To Do" src={toDo} />
       </ModalBlank>
 
       <ModalBlank
@@ -69,7 +71,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="RentX"
       >
-        <Image alt="galinha" src={galinha} />
+        <Image alt="RentX" src={rentX} />
       </ModalBlank>
 
       <Container>
