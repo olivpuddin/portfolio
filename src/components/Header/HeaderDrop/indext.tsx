@@ -33,11 +33,14 @@ export const HeaderDrop = () => {
         </Menu>
 
         <Icons>
-          <Github>
+          <Github href="https://github.com/olivpuddin" target={"_blank"}>
             <GithubSvg />
           </Github>
 
-          <Linkedin>
+          <Linkedin
+            href="https://www.linkedin.com/in/bruna-oliveira-05682b229/"
+            target={"_blank"}
+          >
             <LinkedinSvg />
           </Linkedin>
 

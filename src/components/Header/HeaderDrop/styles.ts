@@ -26,7 +26,7 @@ export const Icons = styled.div`
   justify-content: space-between;
 `;
 
-export const Github = styled.div`
+export const Github = styled.a`
   border-radius: 1.5rem;
 
   padding: 0.6rem;
@@ -34,14 +34,16 @@ export const Github = styled.div`
   transition: filter 0.8s;
 
   cursor: pointer;
+  color: ${({ theme }) => theme.header};
 
   :hover {
+    color: ${({ theme }) => theme.header};
     background-color: ${({ theme }) => theme.hover};
     filter: brightness(0.9);
   }
 `;
 
-export const Linkedin = styled.div`
+export const Linkedin = styled.a`
   border-radius: 1.5rem;
 
   padding: 0.6rem;
@@ -49,8 +51,11 @@ export const Linkedin = styled.div`
   transition: filter 0.8s;
 
   cursor: pointer;
+  color: ${({ theme }) => theme.header};
 
   :hover {
+    color: ${({ theme }) => theme.header};
+
     background-color: ${({ theme }) => theme.hover};
     filter: brightness(0.9);
   }
