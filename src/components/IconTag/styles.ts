@@ -9,6 +9,7 @@ export const Tag = styled.div`
 export const Icon = styled.div`
   position: absolute;
   right: 0;
+  z-index: 99;
 
   display: flex;
   justify-content: center;

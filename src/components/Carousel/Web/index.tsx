@@ -12,11 +12,16 @@ import { ModalBlank } from "../../../components/Modal";
 import { IconTag } from "../../IconTag";
 
 // assets
-import galinha from "../../../assets/galinha.png";
 import gofinances from "../../../assets/projects/gofinances-web.png";
 import toDo from "../../../assets/projects/toDo-web.png";
 import ignews from "../../../assets/projects/ignews.png";
 import hotel from "../../../assets/projects/hotel.png";
+
+// banners, still assets...
+import toDoBanner from "../../../assets/banner/toDo.png";
+import hotelBanner from "../../../assets/banner/hotel.png";
+import ignewsBanner from "../../../assets/banner/ignews.png";
+import gofinancesBanner from "../../../assets/banner/gofinances-web.png";
 
 // Icons
 import { FaReact } from "react-icons/fa";
@@ -149,22 +154,26 @@ export const CarouselWeb = () => {
         >
           <Gofinances onClick={handleModalGofinances}>
             <IconTag IconLib={FaReact} />
-            <Image src={galinha} alt="oi" />
+            <Image
+              src={gofinancesBanner}
+              alt="gofinances"
+              layout="responsive"
+            />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
             <IconTag IconLib={FaReact} />
-            <Image src={galinha} alt="oi" />
+            <Image src={toDoBanner} alt="To Do" layout="responsive" />
           </ToDo>
 
           <Ignews onClick={handleModalIgnews}>
             <IconTag IconLib={SiNextdotjs} />
-            <Image src={galinha} alt="oi" />
+            <Image src={ignewsBanner} alt="ignews" layout="responsive" />
           </Ignews>
 
           <HotelBudget onClick={handleModalHotel}>
             <IconTag IconLib={SiNextdotjs} />
-            <Image src={galinha} alt="oi" />
+            <Image src={hotelBanner} alt="hotel" layout="responsive" />
           </HotelBudget>
         </Carousel>
       </Container>

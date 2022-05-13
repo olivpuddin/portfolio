@@ -12,10 +12,14 @@ import { ModalBlank } from "../../../components/Modal";
 import { IconTag } from "../../IconTag";
 
 // assets
-import galinha from "../../../assets/galinha.png";
 import gofinances from "../../../assets/projects/gofinances-mob.png";
 import toDo from "../../../assets/projects/toDo-mob.png";
 import rentX from "../../../assets/projects/rentx.png";
+
+// banners, still assets...
+import gofinancesBanner from "../../../assets/banner/gofinances-mob.png";
+import toDoBanner from "../../../assets/banner/toDo.png";
+import rentXBanner from "../../../assets/banner/rentx.png";
 
 // Icons
 import { FaReact } from "react-icons/fa";
@@ -135,17 +139,21 @@ export const CarouselMobile = () => {
           {/* outside */}
           <Gofinances onClick={handleModalGofinances}>
             <IconTag IconLib={FaReact} />
-            <Image src={galinha} alt="oi" layout="responsive" />
+            <Image
+              src={gofinancesBanner}
+              alt="gofinances"
+              layout="responsive"
+            />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
             <IconTag IconLib={FaReact} />
-            <Image src={galinha} alt="oi" layout="responsive" />
+            <Image src={toDoBanner} alt="To Do" layout="responsive" />
           </ToDo>
 
           <RentX onClick={handleModalRentX}>
             <IconTag IconLib={FaReact} />
-            <Image src={galinha} alt="oi" layout="responsive" />
+            <Image src={rentXBanner} alt="Rentx" layout="responsive" />
           </RentX>
         </Carousel>
       </Container>
