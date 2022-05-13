@@ -15,7 +15,8 @@ import { IconTag } from "../../IconTag";
 import galinha from "../../../assets/galinha.png";
 
 // Icons
-import { FiGithub } from "react-icons/fi";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from 'react-icons/si'
 
 // Styles
 import { Container, Gofinances, ToDo, Ignews, HotelBudget } from "./styles";
@@ -143,22 +144,22 @@ export const CarouselWeb = () => {
           wrapAround={true}
         >
           <Gofinances onClick={handleModalGofinances}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={FaReact} />
             <Image src={galinha} alt="oi" />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={FaReact} />
             <Image src={galinha} alt="oi" />
           </ToDo>
 
           <Ignews onClick={handleModalIgnews}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={SiNextdotjs} />
             <Image src={galinha} alt="oi" />
           </Ignews>
 
           <HotelBudget onClick={handleModalHotel}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={SiNextdotjs} />
             <Image src={galinha} alt="oi" />
           </HotelBudget>
         </Carousel>

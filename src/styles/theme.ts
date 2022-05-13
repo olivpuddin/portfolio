@@ -16,6 +16,7 @@ export const theme = {
     hover: "white",
 
     backgroundImage: backgroundLight.src,
+    icon: "#9452A5",
   },
 
   darkTheme: {
@@ -30,6 +31,8 @@ export const theme = {
     text_light: "#CEF9F2",
 
     hover: "#272727",
+
     backgroundImage: backgroundDark.src,
+    icon: "#272727",
   },
 };

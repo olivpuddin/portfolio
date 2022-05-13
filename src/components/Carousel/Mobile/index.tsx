@@ -16,7 +16,7 @@ import teste from "../../../assets/projects/teste.png";
 import galinha from "../../../assets/galinha.png";
 
 // Icons
-import { FiGithub } from "react-icons/fi";
+import { FaReact } from "react-icons/fa";
 
 // Styles
 import { Container, Gofinances, ToDo, RentX } from "./styles";
@@ -132,17 +132,17 @@ export const CarouselMobile = () => {
         >
           {/* outside */}
           <Gofinances onClick={handleModalGofinances}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={FaReact} />
             <Image src={galinha} alt="oi" layout="responsive" />
           </Gofinances>
 
           <ToDo onClick={handleModalToDo}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={FaReact} />
             <Image src={galinha} alt="oi" layout="responsive" />
           </ToDo>
 
           <RentX onClick={handleModalRentX}>
-            <IconTag IconLib={FiGithub} />
+            <IconTag IconLib={FaReact} />
             <Image src={galinha} alt="oi" layout="responsive" />
           </RentX>
         </Carousel>

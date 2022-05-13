@@ -16,8 +16,10 @@ export const Icon = styled.div`
 
   width: 35px;
   height: 50px;
+  font-size: 1.5rem;
 
-  background-color: ${({ theme }) => theme.hover};
+  color: ${({ theme }) => theme.icon};
+  background-color: #e1e1e6;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
 `;
