@@ -4,6 +4,7 @@ import { Col, Row, Container } from "reactstrap";
 // Next
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 
 // hooks
 import { useWidth } from "../hooks/useWidth";
@@ -12,8 +13,11 @@ import { useWidth } from "../hooks/useWidth";
 import { Header } from "../components/Header";
 import { Background } from "../components/Background";
 
+// assets
+import me from "../assets/me.jpg";
+
 // Styles
-import { Wrapper, Title, Subtitle, About, Me } from "./home";
+import { Wrapper, Title, Subtitle, About } from "./home";
 
 const Home: NextPage = () => {
   const { width } = useWidth();
@@ -42,18 +46,29 @@ const Home: NextPage = () => {
               <Subtitle>
                 <i>&lt;Front-end dev /&gt;</i>
               </Subtitle>
-              <About>making a deal with my sanity...</About>
+              <About>
+                <strong>Web &amp; Mobile Developer.</strong>
+                <hr />
+                Here, you&apos;ll find a bit about my workshop :) <br />
+                <strong>For more details, access my Github account.</strong>
+              </About>
             </Col>
 
             <Col
               md={6}
               sm={6}
               style={{
-                display: "flex",
+                display: "grid",
                 justifyContent: "center",
               }}
             >
-              <Me src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFISNM0rnQAId54geyGA6_xOSqi5VergCNEHtdVz9wNa9u6aXS1FIWkYm_xTmYLQX_BQ&usqp=CAU" />
+              <Image
+                src={me}
+                alt="me"
+                width={300}
+                height={300}
+                layout="fixed"
+              />
             </Col>
           </Row>
         </Container>

@@ -25,7 +25,3 @@ export const About = styled.p`
   font-size: 1.2rem;
   margin-top: 2rem;
 `;
-
-export const Me = styled.img`
-  height: 250px;
-`;

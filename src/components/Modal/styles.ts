@@ -12,6 +12,8 @@ export const Button = styled.button`
   top: 0.1rem;
   right: 0.8rem;
 
+  font-size: 1.5rem;
+
   border: 0;
   background-color: transparent;
   color: #e1e1e6;

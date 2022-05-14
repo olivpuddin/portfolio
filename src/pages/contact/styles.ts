@@ -24,6 +24,7 @@ export const Subtitle = styled.span`
   display: grid;
   font-size: 3rem;
   font-weight: bold;
+  color: ${({ theme }) => theme.text_light};
 `;
 
 export const Button = styled.button`
@@ -60,5 +61,5 @@ export const Email = styled.span`
 `;
 
 export const Me = styled.img`
-  margin-top: 1rem;
+  height: 250px;
 `;

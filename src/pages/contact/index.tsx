@@ -6,6 +6,7 @@ import { Row, Col, Container } from "reactstrap";
 
 // Next
 import Head from "next/head";
+import Link from "next/link";
 
 // hooks
 import { useWidth } from "../../hooks/useWidth";
@@ -45,10 +46,12 @@ const Contact = () => {
             <Col md={6} sm={6}>
               <Title>
                 Have any <span>project</span> in your mind?
-                <Subtitle>Let&apos;s discuss</Subtitle>
               </Title>
+              <Subtitle>Let&apos;s discuss</Subtitle>
               <Col md={6}>
-                <Button>Start talking</Button>
+                <Link href="https://www.linkedin.com/in/bruna-oliveira-05682b229/">
+                  <Button>Start talking</Button>
+                </Link>
               </Col>
             </Col>
 
@@ -60,7 +63,7 @@ const Contact = () => {
                 justifyContent: "center",
               }}
             >
-              <Me src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFISNM0rnQAId54geyGA6_xOSqi5VergCNEHtdVz9wNa9u6aXS1FIWkYm_xTmYLQX_BQ&usqp=CAU" />
+              <Me src="https://imagensemoldes.com.br/wp-content/uploads/2020/10/Escrita-Thank-You-PNG.png" />
               <More>
                 <FiMail />
                 <Email>brunabzoliv@gmail.com</Email>
