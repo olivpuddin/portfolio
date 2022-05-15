@@ -25,3 +25,13 @@ export const About = styled.p`
   font-size: 1.2rem;
   margin-top: 2rem;
 `;
+
+export const Branch = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
+`;
+
+export const More = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
+`;

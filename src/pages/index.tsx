@@ -17,7 +17,7 @@ import { Background } from "../components/Background";
 import me from "../assets/me.jpg";
 
 // Styles
-import { Wrapper, Title, Subtitle, About } from "./home";
+import { Wrapper, Title, Subtitle, About, Branch, More } from "./home";
 
 const Home: NextPage = () => {
   const { width } = useWidth();
@@ -47,10 +47,9 @@ const Home: NextPage = () => {
                 <i>&lt;Front-end dev /&gt;</i>
               </Subtitle>
               <About>
-                <strong>Web &amp; Mobile Developer.</strong>
-                <hr />
-                Here, you&apos;ll find a bit about my workshop :) <br />
-                <strong>For more details, access my Github account.</strong>
+                <Branch>Web &amp; Mobile Developer.</Branch>
+                Here, you&apos;ll find a bit about my workshop! :)
+                <More>For more details, access my Github account.</More>
               </About>
             </Col>
 
