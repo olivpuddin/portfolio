@@ -9,7 +9,7 @@ import { DarkModeProvider } from "../hooks/useTheme";
 import { WidthProvider } from "../hooks/useWidth";
 
 // Components
-import { LoadingScreen } from "../components/LoadingScreen";
+import { Load } from "../components/LoadScreen";
 
 // Styles
 import { GlobalStyle } from "../styles/global";
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {!isLoading && <LoadingScreen />}
+      {!isLoading && <Load />}
 
       <DarkModeProvider>
         <WidthProvider>

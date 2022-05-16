@@ -21,17 +21,19 @@ export const Subtitle = styled.h5`
   font-weight: 400;
 `;
 
-export const About = styled.p`
+export const About = styled.span`
+  display: grid;
   font-size: 1.2rem;
   margin-top: 2rem;
 `;
 
-export const Branch = styled.p`
+export const Branch = styled.span`
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 2rem;
 `;
 
-export const More = styled.p`
+export const More = styled.span`
   font-size: 1.2rem;
   font-weight: 700;
 `;

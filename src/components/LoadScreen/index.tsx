@@ -5,7 +5,7 @@ import animationData from "../../assets/loading.json";
 
 import { motion } from "framer-motion";
 
-export const LoadingScreen = () => {
+export const Load = () => {
   const [isFinish, setIsFinish] = useState(true);
   const defaultOptions = {
     loop: true,
