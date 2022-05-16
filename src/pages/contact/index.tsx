@@ -19,7 +19,7 @@ import { Background } from "../../components/Background";
 import { FiMail } from "react-icons/fi";
 
 // Styles
-import { Wrapper, Title, Subtitle, Button, Email, Me, More } from "./styles";
+import { Wrapper, Title, Subtitle, Button, Email, Me, More } from "../../styles/stylesContact";
 
 const Contact = () => {
   const { width } = useWidth();

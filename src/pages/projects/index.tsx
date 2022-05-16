@@ -26,7 +26,7 @@ import {
   Web,
   LabelWeb,
   Title,
-} from "./styles";
+} from "../../styles/stylesProjects";
 
 const Projects = () => {
   return (

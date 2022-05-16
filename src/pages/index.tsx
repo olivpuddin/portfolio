@@ -17,7 +17,7 @@ import { Background } from "../components/Background";
 import me from "../assets/me.jpg";
 
 // Styles
-import { Wrapper, Title, Subtitle, About, Branch, More } from "./home";
+import { Wrapper, Title, Subtitle, About, Branch, More } from "../styles/home";
 
 const Home: NextPage = () => {
   const { width } = useWidth();
