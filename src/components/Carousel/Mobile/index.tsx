@@ -1,5 +1,5 @@
 // React
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // Next
 import Image from "next/image";
@@ -10,6 +10,7 @@ import Carousel from "nuka-carousel";
 // Components
 import { ModalBlank } from "../../../components/Modal";
 import { IconTag } from "../../IconTag";
+import { LoadAssets } from "../../LoadAssets";
 
 // assets
 import gofinances from "../../../assets/projects/gofinances-mob.png";
@@ -31,6 +32,7 @@ export const CarouselMobile = () => {
   const [isModalGofinancesOpen, setIsModalGofinancesOpen] = useState(false);
   const [isModalToDoOpen, setIsModalToDoOpen] = useState(false);
   const [isModalRentxOpen, setIsModalRentxOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // functions to handle w/ modals
   function handleModalGofinances() {
@@ -51,6 +53,12 @@ export const CarouselMobile = () => {
     setIsModalRentxOpen(false);
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 4000);
+  }, []);
+
   return (
     <>
       {/* inside */}
@@ -59,7 +67,11 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="gofinances"
       >
-        <Image alt="gofinances" src={gofinances} />
+        {!isLoading ? (
+          <LoadAssets />
+        ) : (
+          <Image alt="gofinances" src={gofinances} />
+        )}
       </ModalBlank>
 
       <ModalBlank
@@ -67,7 +79,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="To Do"
       >
-        <Image alt="To Do" src={toDo} />
+        {!isLoading ? <LoadAssets /> : <Image alt="To Do" src={toDo} />}
       </ModalBlank>
 
       <ModalBlank
@@ -75,7 +87,7 @@ export const CarouselMobile = () => {
         onClosed={handleModalClose}
         title="RentX"
       >
-        <Image alt="RentX" src={rentX} />
+        {!isLoading ? <LoadAssets /> : <Image alt="RentX" src={rentX} />}
       </ModalBlank>
 
       <Container>

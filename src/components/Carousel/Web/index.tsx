@@ -1,5 +1,5 @@
 // React
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // Next
 import Image from "next/image";
@@ -10,6 +10,7 @@ import Carousel from "nuka-carousel";
 // Components
 import { ModalBlank } from "../../../components/Modal";
 import { IconTag } from "../../IconTag";
+import { LoadAssets } from "../../LoadAssets";
 
 // assets
 import gofinances from "../../../assets/projects/gofinances-web.png";
@@ -35,6 +36,7 @@ export const CarouselWeb = () => {
   const [isModalToDoOpen, setIsModalToDoOpen] = useState(false);
   const [isModalIgnewsOpen, setIsModalIgnewsOpen] = useState(false);
   const [isModalHotelOpen, setIsModalHotelOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // functions to handle w/ modals
   function handleModalGofinances() {
@@ -60,6 +62,12 @@ export const CarouselWeb = () => {
     setIsModalHotelOpen(false);
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 4000);
+  }, []);
+
   return (
     <>
       <ModalBlank
@@ -67,7 +75,11 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="gofinances"
       >
-        <Image alt="gofinances" src={gofinances} />
+        {!isLoading ? (
+          <LoadAssets />
+        ) : (
+          <Image alt="gofinances" src={gofinances} />
+        )}
       </ModalBlank>
 
       <ModalBlank
@@ -75,7 +87,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="To Do"
       >
-        <Image alt="To Do" src={toDo} />
+        {!isLoading ? <LoadAssets /> : <Image alt="To Do" src={toDo} />}
       </ModalBlank>
 
       <ModalBlank
@@ -83,7 +95,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="Ig.news"
       >
-        <Image alt="ignews" src={ignews} />
+        {!isLoading ? <LoadAssets /> : <Image alt="ignews" src={ignews} />}
       </ModalBlank>
 
       <ModalBlank
@@ -91,7 +103,7 @@ export const CarouselWeb = () => {
         onClosed={handleModalClose}
         title="Hotel Budget"
       >
-        <Image alt="hotel" src={hotel} />
+        {!isLoading ? <LoadAssets /> : <Image alt="hotel" src={hotel} />}
       </ModalBlank>
 
       <Container>
