@@ -33,7 +33,7 @@ export const HeaderDrop = () => {
         </Menu>
 
         <Icons>
-          <Github href="https://github.com/olivpuddin" target={"_blank"}>
+          <Github href="https://github.com/oliveirabz" target={"_blank"}>
             <GithubSvg />
           </Github>
 
